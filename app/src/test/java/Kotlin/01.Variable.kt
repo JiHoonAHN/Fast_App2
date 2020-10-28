@@ -12,8 +12,17 @@ var hello:String = "hello"
 var point:Double = 3.4;
 val fix:Int = 20
 fun main(args:Array<String>){
-    print(num)
+    println(num)
+    println(hello)
+    println(point)
+    println(fix)
 
+    num=100
+    hello="Good Bye"
+    point = 10.4
 
-
+    println(num)
+    println(hello)
+    println(point)
+    println(fix)
 }
