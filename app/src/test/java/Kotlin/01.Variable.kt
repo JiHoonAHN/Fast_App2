@@ -17,7 +17,7 @@ fun main(args:Array<String>){
     println(point)
     println(fix)
 
-    num=100
+    num =100
     hello="Good Bye"
     point = 10.4
 
@@ -25,4 +25,6 @@ fun main(args:Array<String>){
     println(hello)
     println(point)
     println(fix)
+    //fix = 500//val = 상수 - 다시는 값 바꿀수 없음
+
 }
