@@ -17,4 +17,7 @@ fun main(array:Array<String>){
     var number1 : Int =20
     var  hello1 : String = "Hello"
     var point1:Double = 3.4
+    print(number1)
+    print(hello1)
+
 }
