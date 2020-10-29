@@ -12,6 +12,8 @@ package Kotlin
 var number:Int = 10
 var number1 : Int =20
 var  hello1 : String = "Hello"
+
+//엄청 긴코드
 var point1:Double = 3.4
 fun main(array:Array<String>){
     number = 20
@@ -19,7 +21,7 @@ fun main(array:Array<String>){
     //var/val 변수 : 자료형 = 값
     print(number)
     //Variable or Value
-    //-1 . 변하지 않는 갑이라면 Value2
-    //-2. 진짜 모르겠다!->Value
+    //-1 . 변하지 않는 갑이라면 Value
+    //-2. 진짜 모르겠다! -> Value
 
 }
