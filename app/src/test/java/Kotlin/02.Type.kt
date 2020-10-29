@@ -19,5 +19,7 @@ fun main(array:Array<String>){
     var point1:Double = 3.4
     print(number1)
     print(hello1)
+    print(point1)
+    print(number)
 
 }
