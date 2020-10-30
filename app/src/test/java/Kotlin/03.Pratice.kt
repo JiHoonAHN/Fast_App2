@@ -11,6 +11,8 @@ var f ="My name is $e Nice to meet you"
 
 //Null
 // - 존재하지 않는다.
+var  abc1:Int? =null
+var abc:Double? =null
 fun main(array:Array<String>)
 {
     println(a)
