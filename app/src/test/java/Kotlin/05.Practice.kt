@@ -34,5 +34,5 @@ fun main(array:Array<String>){
     println (result4)
     val result5 = showMyplus(4,5)
     println(result5)
-    A
+
 }
