@@ -19,9 +19,15 @@ fun plus(first:Int , second:Int):Int{
     return result
 }
 // - 디폴트 값을 갖는 함수 만들기
-fun plusFive(first: Int,second: Int)
+fun plusFive(first: Int,second: Int = 5):Int
 {
-
+    val result  : Int  = first +second
+    return result
+}
+//반환값이 없는 함수(Unit)
+fun printPlus(first: Int,second: Int):Unit {
+    val result : Int = first + second
+    println(result)
 }
 fun main(array:Array<String>) {
     //함수를 호출 하는 방법
@@ -32,5 +38,11 @@ fun main(array:Array<String>) {
     println(result2)
     val result3 = plus(second = 100,first = 10)
     println(result3)
-
+    val result4 =plusFive(10,20)
+    println(result)
+    val result5 = plusFive(10)
+    println(result5)
+    val result6=printPlus(10,20)
+    println()
+    print(result6)
 }
