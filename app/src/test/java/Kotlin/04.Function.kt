@@ -29,6 +29,15 @@ fun printPlus(first: Int,second: Int):Unit {
     val result : Int = first + second
     println(result)
 }
+fun plusShort(first:Int , second: Int)=first +second
+// - 가변인자를 갖는 함수 선언하기
+fun plusMany(vararg numbers:Int) {
+    //-vararg = n 개의 인수를 받음
+    for (number in numbers)
+    {
+        println(number)
+    }
+}
 fun main(array:Array<String>) {
     //함수를 호출 하는 방법
     val result = plus(5,10)
@@ -42,7 +51,12 @@ fun main(array:Array<String>) {
     println(result)
     val result5 = plusFive(10)
     println(result5)
-    val result6=printPlus(10,20)
     println()
-    print(result6)
+    val result6=printPlus(10,20)
+    println(result6)
+    val result7 = plusShort(10,1000)
+    println(result7)
+    println()
+    plusMany(1,2,3)
+    plusMany(100)
 }
