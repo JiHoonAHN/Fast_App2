@@ -21,15 +21,15 @@ fun main(array:Array<String>)
     Car("v8 engine","big")
     val bigCar = Car("v8 engine","big")
     //우리가 만든 클래스는 자료형이 된다.
-    //val bigCar1:Car = Car("v8 engine","big")
-   // val number :Int =10
-    //var number1 = 20
+    val bigCar1:Car = Car("v8 engine","big")
+    val number :Int =10
+    var number1 = 20
     //인스턴스가 가지고 있는 기능을 사용하는 방법
-    //val superCar:SuperCar = SuperCar("good engine","big","white")
-//    val runableCar:RunableCar= RunableCar("simple engine","short body")
-//    runableCar.drive()
-//    runableCar.ride()
-//    runableCar.navi("부산")
+    val superCar:SuperCar = SuperCar("good engine","big","white")
+    val runableCar:RunableCar= RunableCar("simple engine","short body")
+    runableCar.drive()
+    runableCar.ride()
+    runableCar.navi("부산")
     //인스턴스의 맴버 변수에 접근 하는 방법
     val runableCar2:RunableCar2= RunableCar2("nice engine","long body")
     println(runableCar2.body)
@@ -40,35 +40,35 @@ fun main(array:Array<String>)
 class Car(var engine:String,body:String){}
 
 //클래스(설명서) 만드는 방법(2)
-//class SuperCar{
-//    var engine : String = ""
-//    var body : String = ""
-//    var door : String = ""
-//
-//    constructor(engine : String,body:String,door:String)
-//    {   println(engine)
-//        println(body)
-//        println(door)
-//
-//        this.engine = engine
-//        this.body = body
-//        this.door = door
-//    }
-//}
-//fun abc(title:String,book:String)
-//{
-//
-//}
+class SuperCar{
+    var engine : String = ""
+    var body : String = ""
+    var door : String = ""
+
+    constructor(engine : String,body:String,door:String)
+    {   println(engine)
+        println(body)
+        println(door)
+
+        this.engine = engine
+        this.body = body
+        this.door = door
+    }
+}
+fun abc(title:String,book:String)
+{
+
+}
 // 클래스(설명서) 만드는 방법(3)->1번 방법의 확장
-//class Car1(engine: String,body: String)
-//{   var door :String = ""
-//
-//    // 생성자
-//    constructor(engine: String,body: String,door: String): this(engine,body){ // this= Car1
-//        this.door = door
-//    }
-//
-//}
+class Car1(engine: String,body: String)
+{   var door :String = ""
+
+    // 생성자
+    constructor(engine: String,body: String,door: String): this(engine,body){ // this= Car1
+        this.door = door
+    }
+
+}
 //클래스 (설명서 )만드는 방법 (4)->2번 방법의 확장
 class Car2 {
     var engine:String=""
@@ -87,20 +87,20 @@ class Car2 {
         this.door=door
     }
 }
-//class RunableCar(engine:String, body:String)
-//{
-//    fun ride() {
-//        println("탑승하였습니다.")
-//
-//    }
-//    fun drive(){
-//        println("달립니다 !")
-//    }
-//    fun navi(destination:String)
-//    {
-//        println("$destination 으로 목적지가 설정되었습니다.")
-//    }
-//}
+class RunableCar(engine:String, body:String)
+{
+    fun ride() {
+        println("탑승하였습니다.")
+
+    }
+    fun drive(){
+        println("달립니다 !")
+    }
+    fun navi(destination:String)
+    {
+        println("$destination 으로 목적지가 설정되었습니다.")
+    }
+}
 class  RunableCar2{
     var engine:String = ""
     var body:String =""
