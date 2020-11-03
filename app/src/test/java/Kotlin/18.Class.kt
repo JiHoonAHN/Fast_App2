@@ -18,17 +18,17 @@ fun main(array:Array<String>)
 {
     //클래스(설명서)를 통해서 실체를 만드는 방법
     //-> 인스턴스화-> 인스턴스(객체)
-    Car("v8 engine","big")
-    val bigCar = Car("v8 engine","big")
-    //우리가 만든 클래스는 자료형이 된다.
-    val bigCar1:Car = Car("v8 engine","big")
-    val number :Int =10
-    var number1 = 20
-    val superCar:SuperCar = SuperCar("good engine","big","white")
+//    Car("v8 engine","big")
+//    val bigCar = Car("v8 engine","big")
+//    //우리가 만든 클래스는 자료형이 된다.
+//    val bigCar1:Car = Car("v8 engine","big")
+//    val number :Int =10
+//    var number1 = 20
+//    val superCar:SuperCar = SuperCar("good engine","big","white")
 }
 
 //클래스(설명서) 만드는 방법(1)
-class Car(var engine:String,body:String){}
+//class Car(var engine:String,body:String){}
 
 //클래스(설명서) 만드는 방법(2)
 class SuperCar{
@@ -36,27 +36,45 @@ class SuperCar{
     var body : String = ""
     var door : String = ""
 
-    constructor(engine : String,body:String,door:String)
-    {   println(engine)
-        println(body)
-        println(door)
-
-        this.engine = engine
-        this.body = body
-        this.door = door
-    }
+//    constructor(engine : String,body:String,door:String)
+//    {   println(engine)
+//        println(body)
+//        println(door)
+//
+//        this.engine = engine
+//        this.body = body
+//        this.door = door
+//    }
 }
-fun abc(title:String,book:String)
-{
-
-}
+//fun abc(title:String,book:String)
+//{
+//
+//}
 // 클래스(설명서) 만드는 방법(3)->1번 방법의 확장
-class Car1(engine: String,body: String)
-{   var door :String = ""
+//class Car1(engine: String,body: String)
+//{   var door :String = ""
+//
+//    // 생성자
+//    constructor(engine: String,body: String,door: String): this(engine,body){ // this= Car1
+//        this.door = door
+//    }
+//
+//}
+//클래스 (설명서 )만드는 방법 (4)->2번 방법의 확장
+class Car2 {
+    var engine:String=""
+    var body:String=""
+    var door:String=""
 
-    // 생성자
-    constructor(engine: String,body: String,door: String): this(engine,body){ // this= Car1
-        this.door = door
+    constructor(engine: String,body: String)
+    {
+        this.engine=engine
+        this.body=body
     }
-
+    constructor(engine: String,body: String,door: String)
+    {
+        this.engine=engine
+        this.body=body
+        this.door=door
+    }
 }
