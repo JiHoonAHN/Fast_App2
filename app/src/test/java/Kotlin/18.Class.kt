@@ -34,6 +34,10 @@ fun main(array:Array<String>)
     val runableCar2:RunableCar2= RunableCar2("nice engine","long body")
     println(runableCar2.body)
     println(runableCar2.engine)
+    val testClass=TestClass()
+    testClass.test(1)
+    testClass.test(1,2)
+
 }
 
 //클래스(설명서) 만드는 방법(1)
@@ -108,6 +112,11 @@ class  RunableCar2{
         this.engine = engine
         this.body = body
     }
+    init {
+        //초기 세팅 할때 유용하다.
+        //이 객체를 만들면 가장 먼저 실행됨
+        println("RunableCar2 가 만들어 졌습니다.")
+    }
     fun ride() {
         println("탑승하였습니다.")
     }
@@ -117,5 +126,16 @@ class  RunableCar2{
     fun navi(destination:String)
     {
         println("$destination 으로 목적지가 설정되었습니다.")
+    }
+}
+
+//오버 로딩
+class TestClass(){
+
+    fun test(a:Int){
+        println("up")
+    }
+    fun test(a:Int, b:Int){
+        println("down")
     }
 }
