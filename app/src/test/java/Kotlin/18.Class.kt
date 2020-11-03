@@ -130,6 +130,7 @@ class  RunableCar2{
 }
 
 //오버 로딩
+//-> 이름이 같지만 받는 파라미터가 다른 함수
 class TestClass(){
 
     fun test(a:Int){
