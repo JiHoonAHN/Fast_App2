@@ -14,4 +14,9 @@ fun main(array:Array<String>)
     //배열을 생성하는 방법(2)
     var number1 =10
     var group2 = arrayOf(1,2,3,4,5,"Hello")
+
+//배열의 값을 꺼내는 방법(1)
+    group1.get()
+
+
 }
