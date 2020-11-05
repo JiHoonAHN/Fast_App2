@@ -16,6 +16,7 @@ fun main(array:Array<String>)
 
 //배열의 값을 꺼내는 방법(1)
     group1.get()
+    print(group1)
 
 
 }
