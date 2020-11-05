@@ -20,3 +20,7 @@ fun main(array:Array<String>)
 
 
 }
+
+private fun <T> Array<T>.get() {
+    TODO("Not yet implemented")
+}
