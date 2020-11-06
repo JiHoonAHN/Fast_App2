@@ -9,7 +9,8 @@ fun main(args:Array<String>)
     val value : Int = 1
 
     when(value){
-        1 -> {println("Value is 1")
+        1 -> {
+             println("Value is 1")
         }
         2-> println("Value is 2")
         3->println("Value is 3")
