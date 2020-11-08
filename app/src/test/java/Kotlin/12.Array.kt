@@ -21,6 +21,7 @@ fun main(array:Array<String>)
 //배열의 값을 꺼내는 방법(1)
     val test1 = group1.get(0)
     val test2 = group1.get(4)
+    val test5 = group1.get(2)
     println(test1)
 //배열의 값을 꺼내는 방법(2)
     val test3 = group1[0]
