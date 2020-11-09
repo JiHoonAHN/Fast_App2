@@ -24,7 +24,10 @@ fun main(array:Array<String>)
         println("index: "+index+"value: "+item)
         //문자열 + Int(정수) = 문자열
         //문자열 + 아무거나 = 문자열
-
     }
-
+    println()
+    // 반복하는 방법 (3)
+    a.forEach{
+        println(it)
+    }
 }
