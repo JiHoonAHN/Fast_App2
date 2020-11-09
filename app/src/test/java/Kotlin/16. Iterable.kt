@@ -21,7 +21,10 @@ fun main(array:Array<String>)
     //반복하는 방법 (2)
 
     for((index , item) in a.withIndex()) {
-        println("index:"+index+"value"+item)
+        println("index: "+index+"value: "+item)
+        //문자열 + Int(정수) = 문자열
+        //문자열 + 아무거나 = 문자열
+
     }
 
 }
