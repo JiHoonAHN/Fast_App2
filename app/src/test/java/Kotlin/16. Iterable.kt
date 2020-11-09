@@ -15,7 +15,7 @@ fun main(array:Array<String>)
         }else
         {
             println("item is not Five")
-            println("else 실행")
+
         }
     }
 
