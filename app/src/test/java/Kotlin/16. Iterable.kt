@@ -15,10 +15,13 @@ fun main(array:Array<String>)
         }else
         {
             println("item is not Five")
-
         }
     }
+    println()
+    //반복하는 방법 (2)
 
-
+    for((index , item) in a.withIndex()) {
+        println("index:"+index+"value"+item)
+    }
 
 }
