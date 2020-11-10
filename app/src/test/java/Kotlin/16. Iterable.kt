@@ -28,6 +28,13 @@ fun main(array:Array<String>)
     println()
     // 반복하는 방법 (3)
     a.forEach{
-        println(it)
+        println(it)//람다라는 문법
+    }
+    // 반복하는 방법 (4)
+    a.forEach { item->// 변수명 : it 이 마음에 안들때 사용
+        println(item)
+    }
+    a.forEachIndexed { index, item ->
+        println("index: "+index+"value: "+item)
     }
 }
