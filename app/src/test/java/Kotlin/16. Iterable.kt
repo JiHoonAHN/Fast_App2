@@ -64,4 +64,11 @@ fun main(array:Array<String>)
     for (i in a.size -1 downTo(0) step(2)){
         println(a.get(i))
     }
+
+    //반복하는 방법 (10)
+    for (i in 0 .. a.size){
+        // .. -> 마지막을 포함한다.
+        println(i)
+        
+    }
 }
