@@ -80,8 +80,10 @@ fun main(array:Array<String>)
         println("b")
     }
 
+
     var d: Int = 0
     var e: Int = 4
+
     //반복하는 방법(12)
     do{
         println("hello")
