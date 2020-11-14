@@ -18,7 +18,7 @@ fun main(array:Array<String>){
 //자식 : SuperCar100 , Bus100
 /*private 생략*/ open class Car100(){
     fun  drive(){
-
+        print("운전하는중..")
     }
     fun stop(){
 
