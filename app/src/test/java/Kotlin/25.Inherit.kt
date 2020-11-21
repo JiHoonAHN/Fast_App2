@@ -10,22 +10,27 @@ fun main(array:Array<String>){
     val superCar100 : SuperCar100 = SuperCar100()
     superCar100.drive()
     superCar100.stop()
-
-    val bus100: Bus100 = Bus100()
-    bus100.drive()
+    println(superCar100.drive())
+//    val bus100: Bus100 = Bus100()
+//    bus100.drive()
 }
 //부모 : Car 100
 //자식 : SuperCar100 , Bus100
 /*private 생략*/ open class Car100(){
-    fun  drive(){
-        print("운전하는중..")
+    /*(private 생략)*/open fun  drive():String{
+        return "달린다"
+ //       println("달린다")
     }
     fun stop(){
 
     }
 }
 class SuperCar100() : Car100(){
-
+    override fun drive():String{
+//        println("빨리 달린다.")
+        val run = super.drive()
+        return "빨리 $run"
+    }
 }
 class Bus100() : Car100(){
 
