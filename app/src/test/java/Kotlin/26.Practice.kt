@@ -17,7 +17,7 @@ open class Charactor(var hp: Int, val power: Int){
     open fun defense(damage:Int){
         hp -= damage
         if(hp>0) println("${javaClass.simpleName}의 남은 체력 $hp")
-        else println("사망했습니다.")
+        else println("사망했습니다")
     }
 }
 // 자식 클래스가 인스턴스화 되기 위해서는 부모 클래스 선행되서 인스턴스화 되어야 한다.
