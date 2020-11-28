@@ -18,3 +18,4 @@ package `안드로이드 UI`
 //          - xxxhdpi -> 640
 // -dp ->  Density Independent Pixcel
 //          - 픽셀 독립적인 단위
+// Linearlayout - 뷰(View)를 화면에 배치할 수 있는 무언가가 필요하며 그 역할을 하는것이 뷰 그룹(View Group) 또는 뷰 컨테이너(View Container)입니다.
