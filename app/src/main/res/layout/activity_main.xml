@@ -5,22 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context=".MainActivity">
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="안녕하세요"
-        android:textSize="20dp"
-
-        android:textColor="@color/colorAccent" />
-
-    <TextView
-        android:text="안녕히 가세요"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-    </TextView>
-
-
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="#E11919"
+        android:layout_height="300dp"/>
 </LinearLayout>
