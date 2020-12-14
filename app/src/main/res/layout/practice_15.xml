@@ -88,8 +88,8 @@
                             android:text="안지훈"
                             android:textColor="#ffffff"
                             android:textStyle="normal"/>
-                    </LinearLayout>
 
+                    </LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>
