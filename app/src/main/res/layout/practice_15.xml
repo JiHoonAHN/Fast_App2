@@ -86,14 +86,13 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="안지훈"
+                            android:textSize="10dp"
                             android:textColor="#ffffff"
-                            android:textStyle="normal"/>
+                            android:textStyle="italic"/>
 
                     </LinearLayout>
                 </LinearLayout>
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
